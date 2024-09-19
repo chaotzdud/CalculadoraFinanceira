@@ -34,8 +34,6 @@ class Juros {
     return _tipo;
   }
 
-  Juros() {}
-
   Juros.jurosSimples({double c = 0.0, double i = 0.0, int t = 0}) {
     _capital = c;
     _taxa = i;
