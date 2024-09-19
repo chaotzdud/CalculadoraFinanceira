@@ -1,0 +1,28 @@
+^C:\USERS\ALUNO\DESKTOP\WORKSPACE\BUILD\WINDOWS\CMAKEFILES\2DD8EDD5290B01D0BCFEC61CBA801BD5\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\desenv\framework\flutter PROJECT_DIR=C:\Users\aluno\Desktop\workspace FLUTTER_ROOT=C:\desenv\framework\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\aluno\Desktop\workspace\windows\flutter\ephemeral PROJECT_DIR=C:\Users\aluno\Desktop\workspace FLUTTER_TARGET=C:\Users\aluno\Desktop\workspace\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\aluno\Desktop\workspace\.dart_tool\package_config.json C:/desenv/framework/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ALUNO\DESKTOP\WORKSPACE\BUILD\WINDOWS\CMAKEFILES\03E95DECBFDAEC4B10C98B30490D2F5B\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ALUNO\DESKTOP\WORKSPACE\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/aluno/Desktop/workspace/windows -BC:/Users/aluno/Desktop/workspace/build/windows --check-stamp-file C:/Users/aluno/Desktop/workspace/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

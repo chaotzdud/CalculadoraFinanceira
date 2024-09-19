@@ -1,0 +1,10 @@
+^C:\USERS\ALUNO\DESKTOP\WORKSPACE\BUILD\WINDOWS\CMAKEFILES\6F0DCD1CEC653EEB778439019F0FC27A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/aluno/Desktop/workspace/windows -BC:/Users/aluno/Desktop/workspace/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/aluno/Desktop/workspace/build/windows/calculadora_de_juros.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
