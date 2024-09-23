@@ -23,12 +23,47 @@ class ResultState extends State<Result> {
   Widget build(BuildContext context) {
     final Juros juros = ModalRoute.of(context)!.settings.arguments as Juros;
 
+    final montante = juros.montante;
+    final capital = juros.capital;
+    final taxa = juros.taxa;
+    final tempo = juros.tempo;
+    final tipo = juros.tipo;
+
     return MaterialApp(
-      title: 'Titulo',
+      title: 'Cálculo de $tipo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Jorge'),
+          title: Text('Cálculo de $tipo'),
         ),
+        
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('Cálculo do $tipo'),
+              Text('Montante: $montante'),
+              Text('capital: $capital'),
+              Text('taxa: $taxa'),
+              Text('Tempo: $tempo'),
+            ]
+          ), 
+        ),
+      
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.error, color: Colors.black),
+              label: 'Corrigir',
+            ),
+
+            BottomNavigationBarItem(
+              icon: Icon(Icons.error, color: Colors.black),
+              label: 'Novo Cálculo'
+            ),
+
+          ],
+          onTap: _onItemTapped,
+        )
       ),
     );
   }

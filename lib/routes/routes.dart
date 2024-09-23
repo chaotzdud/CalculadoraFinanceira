@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
+import '../views/result.dart';
+
 
 class Routes {
   static Map<String, Widget Function(BuildContext)> load() {
     return {
       '/main': (context) => const CalculadoraJuros(),
+      '/result': (context) => const Result()
     };
   }
 
