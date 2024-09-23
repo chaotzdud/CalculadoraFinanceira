@@ -36,8 +36,8 @@ class TiposJuros extends StatelessWidget{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Buttom('Juros Simples', Routes.call(context, '/result')),
-            Buttom('Juros Compostos', Routes.call(context, '/#'))
+            Buttom('Juros Simples', Routes.call(context, '/juros-simples')),
+            Buttom('Juros Compostos', Routes.call(context, '/juros-compostos'))
           ],
         )
       )
