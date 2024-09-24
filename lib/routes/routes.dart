@@ -1,3 +1,4 @@
+import 'package:calculadora_de_juros/views/juros_simples.dart';
 import 'package:flutter/material.dart';
 import '../main.dart';
 import '../views/result.dart';
@@ -7,6 +8,7 @@ class Routes {
   static Map<String, Widget Function(BuildContext)> load() {
     return {
       '/main': (context) => const CalculadoraJuros(),
+      '/juros-simples': (context) => const JurosSimples(),
       '/result': (context) => const Result()
     };
   }

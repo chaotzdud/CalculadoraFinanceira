@@ -1,4 +1,4 @@
-import 'package:calculadora_de_juros/model/juros.dart';
+import 'package:calculadora_de_juros/model/Juros.dart';
 import 'package:flutter/material.dart';
 
 import '../routes/routes.dart';
@@ -21,30 +21,31 @@ class ResultState extends State<Result> {
 
   @override
   Widget build(BuildContext context) {
-    final Juros juros = ModalRoute.of(context)!.settings.arguments as Juros;
+    final Juros j = ModalRoute.of(context)!.settings.arguments as Juros;
 
-    final montante = juros.montante;
-    final capital = juros.capital;
-    final taxa = juros.taxa;
-    final tempo = juros.tempo;
-    final tipo = juros.tipo;
+    final juros = j.juros;
+    final montante = j.montante;
+    final capital = j.capital;
+    final taxa = j.taxa;
+    final tempo = j.tempo;
+    final tipo = j.tipo;
 
     return MaterialApp(
-      title: 'Cálculo de $tipo',
+      title: 'Resultado ($tipo)',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Cálculo de $tipo'),
+          title: Text('Resultado ($tipo)'),
         ),
         
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Cálculo do $tipo'),
               Text('Montante: $montante'),
               Text('capital: $capital'),
               Text('taxa: $taxa'),
               Text('Tempo: $tempo'),
+              Text('Juros: $juros'),
             ]
           ), 
         ),

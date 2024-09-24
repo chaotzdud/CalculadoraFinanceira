@@ -1,11 +1,11 @@
 import 'package:calculadora_de_juros/util/label.dart';
 import 'package:flutter/material.dart';
 
-class CaixaDeNumero extends StatelessWidget {
+class TextBox extends StatelessWidget {
   final String _info;
   final TextEditingController _controller;
 
-  const CaixaDeNumero(this._info, this._controller, {super.key});
+  const TextBox(this._info, this._controller, {super.key});
 
   @override
   Widget build(BuildContext context) {

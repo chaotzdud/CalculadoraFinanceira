@@ -5,7 +5,7 @@ class Juros {
   double _montante = 0.0;
   double _capital = 0.0;
   double _taxa = 0.0;
-  int _tempo = 0;
+  double _tempo = 0;
 
   String _tipo = '';
 
@@ -34,7 +34,7 @@ class Juros {
     return _tipo;
   }
 
-  Juros.jurosSimples({double c = 0.0, double i = 0.0, int t = 0}) {
+  Juros.jurosSimples({double c = 0.0, double i = 0.0, double t = 0}) {
     _capital = c;
     _taxa = i;
     _tempo = t;
@@ -43,7 +43,7 @@ class Juros {
     _tipo = 'Juros Simples';
   }
 
-  Juros.jurosCompostos({double c = 0.0, double i = 0.0, int t = 0}) {
+  Juros.jurosCompostos({double c = 0.0, double i = 0.0, double t = 0}) {
     _capital = c;
     _taxa = i;
     _tempo = t;
