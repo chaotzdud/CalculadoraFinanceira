@@ -17,7 +17,7 @@ class TextBox extends StatelessWidget {
           keyboardType: TextInputType.number,
           style: const TextStyle(fontSize: 20),
           decoration: const InputDecoration(
-              hintText: "Entre com o valor...",
+              hintText: "Entre com o valor desejado",
               border: OutlineInputBorder(borderSide: BorderSide(width: 1.0))),
           controller: _controller,
         ),

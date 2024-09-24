@@ -12,18 +12,17 @@ class CalculadoraJuros extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Calculadora de Juros',
       
-      home: const TiposJuros(title: 'Calculadora de Juros'),
+      home: const TelaPrincipal(title: 'Calculadora Financeira'),
       routes: Routes.load()
 
     );
   }
 }
 
-class TiposJuros extends StatelessWidget{
-  const TiposJuros({super.key, required this.title});
+class TelaPrincipal extends StatelessWidget{
+  const TelaPrincipal({super.key, required this.title});
 
   final String title;
 
