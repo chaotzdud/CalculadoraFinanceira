@@ -49,5 +49,7 @@ class Juros {
     _tempo = t;
 
     _juros = _capital * pow((1 + _taxa), _tempo);
+    _tipo = 'Juros Compostos';
+
   }
 }

@@ -1,4 +1,6 @@
 import 'package:calculadora_de_juros/views/juros_simples.dart';
+import 'package:calculadora_de_juros/views/juros_compostos.dart';
+
 import 'package:flutter/material.dart';
 import '../main.dart';
 import '../views/result.dart';
@@ -9,6 +11,7 @@ class Routes {
     return {
       '/main': (context) => const CalculadoraJuros(),
       '/juros-simples': (context) => const JurosSimples(),
+      '/juros-compostos': (context) => const JurosCompostos(),
       '/result': (context) => const Result()
     };
   }
